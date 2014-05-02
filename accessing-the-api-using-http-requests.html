@@ -1,0 +1,295 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML> 
+<HEAD> 
+<TITLE>U.S. Department of Labor -- The Department of Labor Developer Community</TITLE>
+<META NAME="keywords" CONTENT="Department of Labor, DOL, Secretary of Labor" />
+<!-- begin dol-styles.shtm -->
+<link rel="shortcut icon" href="http://www.dol.gov/favicon.ico" type="image/x-icon">
+<link rel="icon" href="http://www.dol.gov/favicon.ico" type="image/x-icon">
+<link href="http://www.dol.gov/dol.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="api.css" TYPE="text/css" />
+<link href="http://webapps.dol.gov/FSPublic/Content/W_Helpful.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+<!--
+caption {text-align:left; font-size:80%}
+table{margin-left:12px;}
+
+
+-->
+</style>
+
+<!-- end dol-styles.shtm -->
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+<script type="text/javascript" src="prettify.js"></script>
+<script language="JavaScript" type="text/javascript">
+
+	jQuery(document).ready(function(){
+
+		// This line of code makes code pretty to look at and understand.
+		window.prettyPrint && prettyPrint()
+	
+	});
+	
+
+
+</script>
+<!--start include header-dest-redesign3.shtm -->
+<script src="http://webapps.dol.gov/FSPublic/Scripts/W_Helpful.js" type="text/javascript"></script>
+<script type="text/javascript">
+		$(document).ready(function() {
+			W_Helpful.init('#fbcontent');
+		});
+</script> 
+</HEAD> 
+<BODY> 
+<a href="https://github.com/USDepartmentofLabor/DOLAPI"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png" alt="Fork me on GitHub"></a>
+<div id="Main">
+	<!--Header Start -->
+    <a href="#pagecontent" class="skipster">Skip to page content</a>
+
+<div id="Header">
+    <div id="Banner">
+        <p class="banner"><a href="http://www.dol.gov">United States Department of Labor</a></p>
+    </div>
+		<div id="RightColumn"><table><tr><td valign="bottom">
+		
+			</td><td>
+            
+  
+ 
+ 
+ 
+            
+            
+          </td></tr>
+		  <tr><td colspan="2">
+			
+
+			</td></tr></table>
+		</div>
+	</div>
+    
+	<!--Header End -->
+
+	<!--Body Start -->
+	<div id="Body">
+		<div id="UtilityBar" class="tools">
+			<div class="utilitybarleft"><div id="agencyname">&nbsp;</div></div>
+
+			<!-- This is where the E-mail This page use to be -->
+			<div class="utilitybarright">
+				<div id="fbcontent" style="float:right"></div>			
+			</div>
+		</div>
+		<div class="crumb-links"><!-- begin crumb-nonav-auto.shtm -->
+<TABLE BORDER="0" CELLSPACING="0" CELLPADDING="0">
+  <TR>
+    <TD VALIGN="middle" ALIGN="LEFT" height="7" style="padding-left:2px"><span class="crumb-links">
+      <a href="http://www.dol.gov">DOL Home</a> &gt; <a href="http://www.dol.gov/open/">OPEN</a> &gt; <a href="http://developer.dol.gov">Developer Community</a> &gt; <a href="index.html">API Documentation</a> &gt; Accessing the API Using HTTP Requests
+      </span> </td>
+
+  </tr>
+</table>
+<!-- end crumb-nonav-auto.shtm --></div>
+		<div id="content" >
+			<div id="pagecontent" style="width:768px;font-size:0;line-height:0;"></div>
+
+<!--end include header-dest-redesign3.shtm -->
+<!-- START CONTENT HERE  *************************************************** -->
+                <h1 class="title" id="page-title">Accessing the API Using HTTP Requests</h1>
+
+<h2>Requesting Dataset Metadata</h2>
+<h3>Authentication</h3>
+<p>This method does not require authentication</p>
+<h3>Arguments</h3>
+<p>$metadata (required)</p>
+<h3>Example URL</h3>
+<p><a>http://api.dol.gov/V1/FORMS/<strong>$metadata</strong></a><br />
+Read the metadata for the FORMS dataset</p>
+<h3>HTTP Error Codes</h3>
+<p>404: Resource not found<br />
+The dataset name is invalid.</p>
+<h3>Comments</h3>
+<p>None</p>
+<h2>Reading a table</h2>
+<h3>Authentication</h3>
+<p>This method does not require authentication</p>
+<h3>Arguments</h3>
+<p>None</p>
+<h3>Example URL</h3>
+<p><a>http://api.dol.gov/V1/FORMS/Agencies</a><br />
+Read Agencies table from the FORMS dataset</p>
+<h3>HTTP Error Codes</h3>
+<p>404: Resource not found<br />
+The dataset name or table name is invalid.</p>
+<h3>Comments</h3>
+<p>A maximum of 100 records will be returned</p>
+<h2>Limit the number of results returned</h2>
+<h3>Authentication</h3>
+<p>This method does not require authentication</p>
+<h3>Arguments</h3>
+<p>$top (required)</p>
+<h3>Example URL</h3>
+<p><a>http://api.dol.gov/V1/FORMS/Agencies?<strong>$top=10</strong></a><br />
+Read the first 10 records of the Agencies table from the FORMS dataset</p>
+<h3>HTTP Error Codes</h3>
+<p>400: Bad Request<br />
+The query contains an error. Read returned value for specific error.<br />
+404: Resource not found<br />
+The dataset name or table name is invalid.</p>
+<h3>Comments</h3>
+<p>A maximum of 100 records will be returned</p>
+<h2>Skip a Number of Results</h2>
+<h3>Authentication</h3>
+<p>This method does not require authentication</p>
+<p><span style="line-height: 1.2em;">Arguments</span></p>
+<p>$skip (required)</p>
+<h3>Example URL</h3>
+<p><a>http://api.dol.gov/V1/FORMS/Agencies?<strong>$skip=5</strong></a><br />
+Read the Agencies table from the FORMS dataset, skipping the first 5 results</p>
+<h3>HTTP Error Codes</h3>
+<p>400: Bad Request<br />
+The query contains an error. Read returned value for specific error.<br />
+404: Resource not found<br />
+The dataset name or table name is invalid.</p>
+<h3>Comments</h3>
+<p>A maximum of 100 records will be returned</p>
+<h2>Data Pagination by Combining Top and Skip</h2>
+<h3>Authentication</h3>
+<p>This method does not require authentication</p>
+<h3>Arguments</h3>
+<p>$top (required)<br />
+$skip (required)</p>
+<h3>Example URL</h3>
+<p><a>http://api.dol.gov/V1/FORMS/Agencies?<strong>$skip=20&amp;$top=10</strong></a><br />
+Read records 21-30 from the Agencies table in FORMS dataset</p>
+<h3>HTTP Error Codes</h3>
+<p>400: Bad Request<br />
+The query contains an error. Read returned value for specific error.<br />
+404: Resource not found<br />
+The dataset name or table name is invalid.</p>
+<h3>Comments</h3>
+<p>A maximum of 100 records will be returned</p>
+<h2>Selecting Specific Columns</h2>
+<h3>Authentication</h3>
+<p>This method does not require authentication</p>
+<h3>Arguments</h3>
+<p>$select</p>
+<h3>Example URL</h3>
+<p><a>http://api.dol.gov/V1/FORMS/AgencyForms?<strong>$select=FormNumber,Title</strong></a><br />
+Read records from the AgencyForms table in FORMS dataset, returning only the FormNumber and Title columns.</p>
+<h3>HTTP Error Codes</h3>
+<p>400: Bad Request<br />
+The query contains an error. Read returned value for specific error.<br />
+404: Resource not found<br />
+The dataset name or table name is invalid.</p>
+<h3>Comments</h3>
+<p>A maximum of 100 records will be returned</p>
+<h2>Sorting Data</h2>
+<h3>Authentication</h3>
+<p>This method does not require authentication</p>
+<h3>Arguments</h3>
+<p>$orderby</p>
+<h3>Example URL</h3>
+<p><a>http://api.dol.gov/V1/FORMS/AgencyForms?<strong>$orderby=FormNumber</strong></a><br />
+Read records from the AgencyForms table in FORMS dataset, sorting by the FormNumber column.</p>
+<p><strong>To sort the column by desc order, add desc after the column name </strong></p>
+<h3>Example URL</h3>
+<p><a>http://api.dol.gov/V1/FORMS/AgencyForms?<strong>$orderby=FormNumber desc</strong></a><br />
+Ascending is the default order.</p>
+<h3>HTTP Error Codes</h3>
+<p>400: Bad Request<br />
+The query contains an error. Read returned value for specific error.<br />
+404: Resource not found<br />
+The dataset name or table name is invalid.</p>
+<h3>Comments</h3>
+<p>A maximum of 100 records will be returned<br />
+More than one column can be specified. Separate column names with commas.</p>
+<h2>Filtering Data – Single Filter</h2>
+<h3>Authentication</h3>
+<p>This method does not require authentication</p>
+<h3>Arguments</h3>
+<p>$filter</p>
+<h3>Comparison Keywords</h3>
+<p>eq – Equal to<br />
+ne – Not Equal to<br />
+gt – Greater than<br />
+lt – Less than<br />
+ge – Greater than or equal to<br />
+le – Less than or equal to</p>
+<h3>Example URL</h3>
+<p><a>http://api.dol.gov/V1/FORMS/AgencyForms?<strong>$filter=AgencyId eq 'MSHA'</strong></a><br />
+Read records from the AgencyForms table in FORMS dataset, returning only the records where the AgencyId is equal to 'MSHA'.</p>
+<h3>Example Response</h3>
+<p>[response]</p>
+<h3>HTTP Error Codes</h3>
+<p>400: Bad Request<br />
+The query contains an error. Read returned value for specific error.<br />
+404: Resource not found<br />
+The dataset name or table name is invalid.</p>
+<h3>Comments</h3>
+<p>A maximum of 100 records will be returned<br />
+More than one filter can be specified. See [link] article for details.</p>
+<h2>Filtering Data – Multiple Filters</h2>
+<h3>Authentication</h3>
+<p>This method does not require authentication</p>
+<h3>Arguments</h3>
+<p>$filter (required)<br />
+and<br />
+or</p>
+<h3>Comparison Keywords</h3>
+<p>eq – Equal to<br />
+ne – Not Equal to<br />
+gt – Greater than<br />
+lt – Less than<br />
+ge – Greater than or equal to<br />
+le – Less than or equal to</p>
+<h3>Example URL</h3>
+<p><a>http://api.dol.gov/V1/FORMS/AgencyForms?<strong>$filter=(AgencyId eq 'MSHA') and (Title eq 'Legal Identity Report')</strong></a><br />
+Read records from the AgencyForms table in FORMS dataset where the AgencyId is equal to MSHA and the Title is equal to 'Legal Identity Report'.</p>
+<h3>HTTP Error Codes</h3>
+<p>400: Bad Request<br />
+The query contains an error. Read returned value for specific error.<br />
+404: Resource not found<br />
+The dataset name or table name is invalid.</p>
+<h3>Comments</h3>
+<p>A maximum of 100 records will be returned</p>
+
+
+<!-- END CONTENT HERE  *************************************************** -->
+<!---original location of this file: "/includes/" -->
+
+</div><!--Body End -->
+
+ </div>
+
+	<!--Footer Start -->
+	<div id="Footer">
+		<div id="FooterMenu">
+			<div id="FooterMenuContainer">
+				<a href="http://www.dol.gov/dol/foia/main.htm">Freedom of Information Act</a>&nbsp;|&nbsp;
+
+				<a href="http://www.dol.gov/dol/privacynotice.htm">Privacy & Security Statement</a>&nbsp;|&nbsp;
+				<a href="http://www.dol.gov/dol/disclaim.htm">Disclaimers</a>&nbsp;|&nbsp;
+				<a href="http://webapps.dol.gov/feedback/FeedbackSurvey.aspx">Customer Survey</a>&nbsp;|&nbsp;
+				<a href="http://www.dol.gov/dol/aboutdol/website-policies.htm">Important Web Site Notices</a>&nbsp;|&nbsp;
+
+                <a href="http://www.dol.gov/dol/aboutdol/plug-ins.htm">Plug-ins Used by DOL</a>
+			</div>
+		</div>
+	
+		<div id="FooterContact">
+			<div id="FooterContactContainer">
+				U.S. Department of Labor&nbsp;|&nbsp;Frances Perkins Building, 200 Constitution Ave., NW, Washington, DC 20210<br>
+
+				<a href="http://www.dol.gov" style=" text-decoration: underline; ">www.dol.gov</a>&nbsp;|&nbsp;Telephone: 1-866-4-USA-DOL (1-866-487-2365)&nbsp;|&nbsp;TTY: 1-877-889-5627&nbsp;|&nbsp;<u><a href="http://www.dol.gov/dol/contact/index.htm">Contact Us</a></u>
+			</div>
+		</div>
+	</div>
+	<!--Footer End -->
+
+
+</div><!--Main End -->
+
+  </BODY>
+</HTML>
