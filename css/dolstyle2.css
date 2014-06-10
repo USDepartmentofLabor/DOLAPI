@@ -93,7 +93,7 @@ h1.header-logo-type {
 	text-decoration:underline !important;
 }
 .brand {
-	background: url('/homepage/img/logo.png') no-repeat;
+	background: url('homepage/img/logo.png') no-repeat;
 	cursor: pointer;
 	float: left;
 	height: 70px;
