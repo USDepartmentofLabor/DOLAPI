@@ -1,145 +1,100 @@
-﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<HTML> 
-<HEAD> 
-<TITLE>U.S. Department of Labor -- The Department of Labor Developer Community</TITLE>
-<META NAME="keywords" CONTENT="Department of Labor, DOL, Secretary of Labor" />
-<!-- begin dol-styles.shtm -->
-<link rel="shortcut icon" href="http://www.dol.gov/favicon.ico" type="image/x-icon">
-<link rel="icon" href="http://www.dol.gov/favicon.ico" type="image/x-icon">
-<link href="http://www.dol.gov/dol.css" rel="stylesheet" type="text/css">
-<link rel="stylesheet" href="api.css" TYPE="text/css" />
-<link href="http://webapps.dol.gov/FSPublic/Content/W_Helpful.css" rel="stylesheet" type="text/css">
-<style type="text/css">
-<!--
-caption {text-align:left; font-size:80%}
-table{margin-left:12px;}
-
-
--->
-</style>
-
-<!-- end dol-styles.shtm -->
-		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
-<script type="text/javascript" src="prettify.js"></script>
-<script language="JavaScript" type="text/javascript">
-
-	jQuery(document).ready(function(){
-
-		// This line of code makes code pretty to look at and understand.
-		window.prettyPrint && prettyPrint()
-	
-	});
-	
-
-
-</script>
-<!--start include header-dest-redesign3.shtm -->
-<script src="http://webapps.dol.gov/FSPublic/Scripts/W_Helpful.js" type="text/javascript"></script>
-<script type="text/javascript">
-		$(document).ready(function() {
-			W_Helpful.init('#fbcontent');
-		});
-</script> 
-</HEAD> 
-<BODY> 
-<a href="https://github.com/USDepartmentofLabor/DOLAPI"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png" alt="Fork me on GitHub"></a>
-<div id="Main">
-	<!--Header Start -->
-    <a href="#pagecontent" class="skipster">Skip to page content</a>
-
-<div id="Header">
-    <div id="Banner">
-        <p class="banner"><a href="http://www.dol.gov">United States Department of Labor</a></p>
-    </div>
-		<div id="RightColumn"><table><tr><td valign="bottom">
-		
-			</td><td>
-            
-  
- 
- 
- 
-            
-            
-          </td></tr>
-		  <tr><td colspan="2">
-			
-
-			</td></tr></table>
-		</div>
-	</div>
+---
+layout: page
+title: Data and Tools For Developers
+---
+  	<div class='limiter pad2y pad4x clearfix'>
+  		<div class='col7 pad4y'>
+  			<h2>Data and Tools For Developers</h2>
+  			<p>The U.S. Department of Labor has put together a suite of tools to help you build solutions around data and code DOL has released to the public.  Here, you'll find datasets published through our centralized API, source code you can use in your next project, including complete applications that you can repurpose or help us improve, and documentation that we have open-sourced.</p><p>In addition to the documentation for the open source projects, the documentation for our API (and this page) is forkable.</p>
+  		</div>
+  		<div class='margin1 col4 pad4y nav'>
+  				<a href='#data' class='truncate contain clearfix pad2 keyline-bottom'>
+            <i class="fa fa-database fa-2x"></i>
+            <span class='prose'>Explore the Data</span>
+          </a>
+					<a href='#api' class='truncate contain clearfix pad2 keyline-bottom'>
+            <i class="fa fa-gears fa-2x"></i>
+            <span class='prose'>Use the API</span>
+          </a>
+          <a href='#code' class='truncate contain clearfix pad2'>
+            <i class="fa fa-code-fork fa-2x"></i>
+            <span class='prose'>Grab Our Code</span>
+          </a>
+  		</div>
+  	</div>
+    <!-- Bottom reader columns -->
     
-	<!--Header End -->
+    <!-- begin -->
+    <div class='limiter clearfix'>
+    <div class='col12 pad4y pad4x fill-grey keyline-top'>
+      <div class='contain clip limiter row12 clearfix'>
+        <div class='col7'>
+          <h2><a class='data' href='#data' id='data'> Explore the Data </a> </h2>
+          We have made more than 200 datasets available through the DOL API.  Explore the dataset documentation.  Because our data covers a broad range of topics, we've grouped them along common themes.  If you want to get a taste of our datasets before you write any code, try them out with our dataset sampler.
+        </div>
+           <div class='col4 pad4x'>
+            <h3><a href='http://developer.dol.gov/dataset/health-safety'> Health &amp; Safety </a></h3>
+              <p>&nbsp;</p>
 
-	<!--Body Start -->
-	<div id="Body">
-		<div id="UtilityBar" class="tools">
-			<div class="utilitybarleft"><div id="agencyname">&nbsp;</div></div>
+            <h3><a href='http://developer.dol.gov/developer-terms/keeping-what-you-earn'> Keeping What You Earn </a></h3>
+              <p>&nbsp;</p>
 
-			<!-- This is where the E-mail This page use to be -->
-			<div class="utilitybarright">
-				<div id="fbcontent" style="float:right"></div>			
-			</div>
-		</div>
-		<div class="crumb-links"><!-- begin crumb-nonav-auto.shtm -->
-<TABLE BORDER="0" CELLSPACING="0" CELLPADDING="0">
-  <TR>
-    <TD VALIGN="middle" ALIGN="LEFT" height="7" style="padding-left:2px"><span class="crumb-links">
-      <a href="http://www.dol.gov">DOL Home</a> &gt; <a href="http://www.dol.gov/open/">OPEN</a> &gt; <a href="http://developer.dol.gov">Developer Community</a> &gt; API Documentation
-      </span> </td>
+            <h3><a href='http://developer.dol.gov/dataset/expanding-growth-opportunities-learning'> Expanding Growth Opportunities & Learning </a></h3>
+              <p>&nbsp;</p>
 
-  </tr>
-</table>
-<!-- end crumb-nonav-auto.shtm --></div>
-		<div id="content" >
-			<div id="pagecontent" style="width:768px;font-size:0;line-height:0;"></div>
+            <h3><a href='http://developer.dol.gov/dataset/others'> Others </a></h3>
+              <p>&nbsp;</p>
 
-<!--end include header-dest-redesign3.shtm -->
-<!-- START CONTENT HERE  *************************************************** -->
-                <h1 class="title" id="page-title">API Documentation</h1>
+            <h3><a href='https://devtools.dol.gov/apisampler'> Dataset Sampler </a></h3>
+              <p>Sample our data without writing any code.</p>
+        </div>
+  		</div>
+  	</div>
+    </div>
+    
+    <!-- next -->
+    <div class='col12 pad4y pad4x fill-{{post.background-color}} keyline-top'>
+      <div class='contain clip limiter row12 clearfix'>
+        <div class='col7'>
+          <h2><a class='data' href='#api' id='api'> Use the API </a> </h2>
+          DOL's API is centralized, providing a one-stop shop for DOL's machine readable open data.  Review our open-sourced documentation, create a key, and get to building your next great app.
+        </div>
+           <div class='col4 pad4x'>
+            <h3><a href='beginners-guide.html'> Beginner's Guide </a></h3>
+              <p>Learn how to get started using DOL's centralized API.</p>
 
-<h2><a href="beginners-guide.html">Beginner's Guide</a></h2>
-<p>Learn how to get started using DOL's centralized API.</p>
-<p>&nbsp;</p>
-<h2><a href="accessing-the-api-using-http-requests.html">Accessing the API Using HTTP Requests</a></h2>
-<p>Learn how to customize your requests.</p>
-<p>&nbsp;</p>
+            <h3><a href='accessing-the-api-using-http-requests.html'> Accessing the API Using HTTP Requests </a></h3>
+              <p>Learn how to customize your requests.</p>
+            <h3><a href='https://devtools.dol.gov/developer'> Manage Your API Keys </a></h3>
+              <p>Manage the API Keys for your apps.</p>
 
+            <h3><a href='https://github.com/USDepartmentofLabor/DOLAPI/issues?state=open'> Open Issues </a></h3>
+              <p>Use the open issues queue to file bugs, to help tackle existing issues, or seek help using the API.</p>
 
-<!-- END CONTENT HERE  *************************************************** -->
-<!---original location of this file: "/includes/" -->
+        </div>
+  		</div>
+  	</div>
+  	
+  	<!-- next -->
+    <div class='limiter clearfix'>
+    <div class='col12 pad4y pad4x fill-grey keyline-top'>
+      <div class='contain clip limiter row12 clearfix'>
+        <div class='col7'>
+          <h2><a class='data' href='#code' id='code'> Grab Our Code </a> </h2>
+          DOL is committed to releasing an ever-increasing number of its software to the open source community.  You are free to use any of this code in your project or improve on it.  If you do fork the any of the code and improve on it, we would welcome your pull requests for review.        </div>
+           <div class='col4 pad4x'>
+            <h3><a href='code.html#sdks'> SDKs </a></h3>
+              <p>SDKs that you can use in your next project.  Our SDKs were even built to help you make use of APIs provided by other federal agencies.</p>
 
-</div><!--Body End -->
+            <h3><a href='code.html#samples'> Sample Apps </a></h3>
+              <p>Sample code that you can learn from or use in your next project.</p>
 
- </div>
+            <h3><a href='code.html#applications'> Applications </a></h3>
+              <p>Mobile apps, web applications, and desktop apps.</p>
 
-	<!--Footer Start -->
-	<div id="Footer">
-		<div id="FooterMenu">
-			<div id="FooterMenuContainer">
-				<a href="http://www.dol.gov/dol/foia/main.htm">Freedom of Information Act</a>&nbsp;|&nbsp;
-
-				<a href="http://www.dol.gov/dol/privacynotice.htm">Privacy & Security Statement</a>&nbsp;|&nbsp;
-				<a href="http://www.dol.gov/dol/disclaim.htm">Disclaimers</a>&nbsp;|&nbsp;
-				<a href="http://webapps.dol.gov/feedback/FeedbackSurvey.aspx">Customer Survey</a>&nbsp;|&nbsp;
-				<a href="http://www.dol.gov/dol/aboutdol/website-policies.htm">Important Web Site Notices</a>&nbsp;|&nbsp;
-
-                <a href="http://www.dol.gov/dol/aboutdol/plug-ins.htm">Plug-ins Used by DOL</a>
-			</div>
-		</div>
-	
-		<div id="FooterContact">
-			<div id="FooterContactContainer">
-				U.S. Department of Labor&nbsp;|&nbsp;Frances Perkins Building, 200 Constitution Ave., NW, Washington, DC 20210<br>
-
-				<a href="http://www.dol.gov" style=" text-decoration: underline; ">www.dol.gov</a>&nbsp;|&nbsp;Telephone: 1-866-4-USA-DOL (1-866-487-2365)&nbsp;|&nbsp;TTY: 1-877-889-5627&nbsp;|&nbsp;<u><a href="http://www.dol.gov/dol/contact/index.htm">Contact Us</a></u>
-			</div>
-		</div>
-	</div>
-	<!--Footer End -->
-
-
-</div><!--Main End -->
-
-  </BODY>
-</HTML>
+            <h3><a href='code.html#everythingelse'> Everything Else </a></h3>
+              <p>&nbsp;</p>
+        </div>
+  		</div>
+  	</div>
+  	</div>

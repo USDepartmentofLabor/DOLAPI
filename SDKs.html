@@ -1,0 +1,345 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML> 
+<HEAD> 
+<TITLE>U.S. Department of Labor -- The Department of Labor Developer Community</TITLE>
+<META NAME="keywords" CONTENT="Department of Labor, DOL, Secretary of Labor" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<!-- begin dol-styles.shtm -->
+<link rel="shortcut icon" href="http://www.dol.gov/favicon.ico" type="image/x-icon">
+<link rel="icon" href="http://www.dol.gov/favicon.ico" type="image/x-icon">
+<!--<link rel="stylesheet" href="api.css" TYPE="text/css" />-->
+<style type="text/css">
+<!--
+caption {text-align:left; font-size:80%}
+table{margin-left:12px;}
+
+
+-->
+</style>
+
+
+<!-- end dol-styles.shtm -->
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+<script type="text/javascript" src="prettify.js"></script>
+<script language="JavaScript" type="text/javascript">
+
+	jQuery(document).ready(function(){
+
+		// This line of code makes code pretty to look at and understand.
+		window.prettyPrint && prettyPrint()
+	
+	});
+	
+
+
+</script>
+<!--start include header-dest-redesign3.shtm -->
+    <!--- Start CSS and JavaScript -->  
+		<!--#include virtual="include-files/css-js.shtm" -->
+		<!--{% include cssjs.html %}-->
+		      <!-- css -->
+      <link rel="stylesheet" href="css/foundation.css" />
+      <link rel="stylesheet" href="css/flexslider.css"  />
+      <link rel="stylesheet" href="css/megamenu.css" />
+      <link rel="stylesheet" href="css/dolstyle2.css" />
+		<link rel='stylesheet' href='site.css' type='text/css' media='screen' />
+             <link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+      <script src="js/modernizr.js"></script>
+      <!--[if lt IE 9]>
+      <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6.2/html5shiv.js"></script>
+      <script src="//s3.amazonaws.com/nwapi/nwmatcher/nwmatcher-1.2.5-min.js"></script>
+      <script src="//html5base.googlecode.com/svn-history/r38/trunk/js/selectivizr-1.0.3b.js"></script>
+      <script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.1.0/respond.min.js"></script>
+      <![endif]-->
+      
+      <script type="text/javascript" src="js/scripts.js"></script><!-- Scripts for the dropdown megamenu and flexslider -->
+      <script src="js/jquery.flexslider.js"></script><!-- Scripts for the highlights banner -->
+      <script><!-- Scripts for the dropdown megamenu especially for the smart phone -->
+         $(document).ready(function($){
+             $('.megamenu').megaMenuCompleteSet({
+                 menu_speed_show : 300, // Time (in milliseconds) to show a drop down
+                 menu_speed_hide : 200, // Time (in milliseconds) to hide a drop down
+                 menu_speed_delay : 200, // Time (in milliseconds) before showing a drop down
+                 menu_effect : 'open_close_fade', // Drop down effect, choose between 'hover_fade', 'hover_slide', 'open_close_fade' etc.
+                 menu_click_outside : 1, // Clicks outside the drop down close it (1 = true, 0 = false)
+                 menu_show_onload : 0, // Drop down to show on page load (type the number of the drop down, 0 for none)
+                 menu_responsive:1 // 1 = Responsive, 0 = Not responsive
+             });
+         });
+      </script>
+      <!-- Hook up the FlexSlider -->
+      <script type="text/javascript" charset="utf-8">
+        // Can also be used with $(document).ready()
+					$(window).load(function() {
+					$('.flexslider').flexslider({
+					animation: "slide"
+							});
+					});
+      </script>
+      <!-- End scripts for the dropdown megamenu  -->
+    
+		<!--- End  CSS and JavaScript -->  
+
+</HEAD> 
+<BODY class="hp"> 
+<div class="wrapper">
+	<div class="hide"> <a href="#maincontent">Skip to Main Content</a> </div>
+<!--Start Banner --> 
+<a name="top"></a>
+	<div class="row top-header" role="banner">
+      <div class="large-6 columns"> <a href="/"> <span class="brand"></span>
+        <h1 class="header-logo-type">UNITED STATES <br>
+          DEPARTMENT OF LABOR </h1>
+        </a> </div>
+      <div class="large-2 columns">
+      	<div class="social-block right hide-for-small"> <a href="/cgi-bin/leave-dol.asp?exiturl=http://www.facebook.com/departmentoflabor&exitTitle=www.Facebook.com&fedpage=no"  class="sm-facebook">Facebook</a> 
+        <a href="/cgi-bin/leave-dol.asp?exiturl=http://twitter.com/usdol&exitTitle=www.Twitter.com&fedpage=no" class="sm-twitter">Twitter</a> 
+        <a href="/cgi-bin/leave-dol.asp?exiturl=http://www.instagram.com/USDOL&exitTitle=www.instagram.com/USDOL&fedpage=no" class="sm-instagram">DOL Instagram</a> 
+        <a href="/rss/" class="sm-rss">RSS</a> 
+        <a href="javascript:window.open('http://service.govdelivery.com/service/multi_subscribe.html?code=USDOL','Popup','width=800,height=500,toolbar=no,scrollbars=yes,resizable=yes'); void('');"
+				 ONCLICK="window.status='Subscribe'; return true"
+				 ONMOUSEOVER="window.status='Subscribe'; return true"
+				 ONMOUSEOUT="window.status=''; return true" class="sm-email">Email</a>
+		</div>
+	</div>
+      <div class="large-4 columns">
+        <div id="searchbox">
+          <form action="//search.usa.gov/search" method="get" class="usagov" role="search">
+            <div class="small-10 columns">
+              <input type="search" name="query" placeholder="Find it in DOL" title="Find it in DOL" required="required" >
+            </div>
+            <div class="small-2 columns">
+              <input type="hidden" name="affiliate" value="u.s.departmentoflabor">
+              <input type="image"  src="/homepage/img/icon-search.png"  vspace="4"  alt="Search DOL" class="usagov-submit">
+            </div>
+          </form>
+        </div>
+      </div>
+</div>    
+	<!--Header End -->
+
+<div class="row">
+  <div class="large-6 columns">
+
+	<!--Body Start -->
+       <div id="content" role="main">
+            <a name="maincontent"></a>
+	
+			<div id="pagecontent" style="width:768px;font-size:0;line-height:0;"></div>
+
+<!--end include header-dest-redesign3.shtm -->
+<!-- START CONTENT HERE  *************************************************** -->
+  	<!-- Middle window section -->
+  	<div class='limiter pad2y pad4x clearfix'>
+  		<div class='col6 pad4y'>
+  			<h2>SDKs and Sample Apps</h2>
+  			<p>The U.S. Department of Labor has put together a suite of tools to help you build solutions around data and code DOL has released to the public.  Here, you'll find datasets published through our centralized API, source code you can use in your next project, including complete applications that you can repurpose or help us improve, and documentation that we have open-sourced.</p><p>In addition to the documentation for the open source projects, the documentation for our API (and this page) is forkable.</p>
+  		</div>
+  		<div class='margin1 col4 pad4y nav'>
+  				<a href='#data' class='truncate contain clearfix pad2 keyline-bottom'>
+            <i class="fa fa-database fa-2x"></i>
+            <span class='prose'>SDKs</span>
+          </a>
+					<a href='#contribute' class='truncate contain clearfix pad2 keyline-bottom'>
+            <i class="fa fa-gears fa-2x"></i>
+            <span class='prose'>Sample Apps</span>
+          </a>
+          <!-- <a href='#api' class='truncate contain clearfix pad2'>
+            <i class="fa fa-code-fork fa-2x"></i>
+            <span class='prose'>Grab Our Code</span>
+          </a>-->
+  		</div>
+  	</div>
+    <!-- Bottom reader columns -->
+    
+    <!-- begin -->
+    <div class='limiter clearfix'>
+    <div class='col12 pad4y pad4x fill-grey keyline-top'>
+      <div class='contain clip limiter row12 clearfix'>
+        <div class='col6'>
+          <h2><a class='data' href='#data' id='data'> SDKs </a> </h2>
+          Our federal data SDKs are built to make accessing data from DOL's API as well as APIs from across the federal government a simple process for developers of all skill levels.  With the SDKs, there's no need to worry about different API standards.
+        </div>
+           <div class='col4 pad4x'>
+            <h3><a href='http://dailymed.nlm.nih.gov/dailymed/about.cfm'> Android </a></h3>
+              <p>&nbsp;</p>
+
+            <h3><a href='https://github.com/HHS/pillbox-data-process/tree/master/scripts#pillbox-data-process'> Blackberry </a></h3>
+              <p>&nbsp;</p>
+
+            <h3><a href='{{post.link3}}'> ColdFusion </a></h3>
+              <p>&nbsp;</p>
+
+            <h3><a href='{{post.link3}}'> iOS </a></h3>
+              <p>&nbsp;</p>
+
+            <h3><a href='{{post.link3}}'> .Net (C#)</a></h3>
+              <p>&nbsp;</p>
+
+            <h3><a href='{{post.link3}}'> PHP </a></h3>
+              <p>&nbsp;</p>
+
+            <h3><a href='{{post.link3}}'> Ruby </a></h3>
+              <p>&nbsp;</p>
+        </div>
+  		</div>
+  	</div>
+    </div>
+    
+    <!-- next -->
+    <div class='col12 pad4y pad4x fill-{{post.background-color}} keyline-top'>
+      <div class='contain clip limiter row12 clearfix'>
+        <div class='col6'>
+          <h2><a class='data' href='#contribute' id='contribute'> Sample Apps </a> </h2>
+          Each of these sample apps are examples of how to access DOL's API using the federal data SDKs.  Use these to learn what to do or take some or all of the code for your app.
+        </div>
+           <div class='col4 pad4x'>
+            <h3><a href='http://dailymed.nlm.nih.gov/dailymed/about.cfm'> Android </a></h3>
+              <p>&nbsp;</p>
+
+            <h3><a href='https://github.com/HHS/pillbox-data-process/tree/master/scripts#pillbox-data-process'> Blackberry </a></h3>
+              <p>&nbsp;</p>
+
+            <h3><a href='{{post.link3}}'> ColdFusion </a></h3>
+              <p>&nbsp;</p>
+
+            <h3><a href='{{post.link3}}'> iOS </a></h3>
+              <p>&nbsp;</p>
+
+            <h3><a href='{{post.link3}}'> .Net (C#)</a></h3>
+              <p>&nbsp;</p>
+
+            <h3><a href='{{post.link3}}'> .Net (C#) - Windows Phone</a></h3>
+              <p>&nbsp;</p>
+
+            <h3><a href='{{post.link3}}'> PHP </a></h3>
+              <p>&nbsp;</p>
+
+            <h3><a href='{{post.link3}}'> Ruby </a></h3>
+              <p>&nbsp;</p>
+        </div>
+  		</div>
+  	</div>
+  	
+  	<!-- next -->
+    <!--<div class='limiter clearfix'>
+    <div class='col12 pad4y pad4x fill-grey keyline-top'>
+      <div class='contain clip limiter row12 clearfix'>
+        <div class='col6'>
+          <h2><a class='data' href='#api' id='api'> ColdFusion </a> </h2>
+          &nbsp;</div>
+           <div class='col4 pad4x'>
+            <h3><a href='http://pillbox.nlm.nih.gov/developer.html#data'> ColdFusion </a></h3>
+              <p>&nbsp;</p>
+
+            <h3><a href='http://pillbox.nlm.nih.gov/developer.html#api'> Applications </a></h3>
+              <p>Mobile apps, web applications, and desktop apps.</p>
+
+            <h3><a href='{{post.link3}}'> Everything Else </a></h3>
+              <p>&nbsp;</p>
+        </div>
+  		</div>
+  	</div>
+  	</div>-->
+<!-- end -->
+
+
+                <!--<h1 class="title" id="page-title">API Documentation</h1>
+
+<h2><a href="beginners-guide.html">Beginner's Guide</a></h2>
+<p>Learn how to get started using DOL's centralized API.</p>
+<p>&nbsp;</p>
+<h2><a href="accessing-the-api-using-http-requests.html">Accessing the API Using HTTP Requests</a></h2>
+<p>Learn how to customize your requests.</p>
+<p>&nbsp;</p>-->
+
+		</div>
+<!-- END CONTENT HERE  *************************************************** -->
+<!---original location of this file: "/includes/" -->
+
+	</div><!--Body End -->
+
+ </div>
+
+	<!--Footer Start -->
+<!-- Start Footer One -->
+<div role="contentinfo">
+<div class="row footer-one">
+  <div class="large-5 columns hide-for-small"> <a href="/"> <img src="homepage/img/dol-logo-white.png" alt="DOL's seal"/> <span class="header-logo-type-white">UNITED STATES <br>
+    DEPARTMENT OF LABOR </span> </a> </div>
+  <div class="large-3 columns">
+    <p class="footer-info1 a-bottom"><a href="/dol/jobs.htm">Career</a> & <a href="/oasam/programs/internship/index.htm">Internships</a> | <a href="/dol/contact/">Contact Us </a></p>
+  </div>
+  <div class="large-4 columns">
+    <div class="social-block-btm mt"> 
+    <a href="/cgi-bin/leave-dol.asp?exiturl=http://www.facebook.com/departmentoflabor&exitTitle=www.Facebook.com&fedpage=no"  class="sm-facebook">Facebook</a> 
+    <a href="/cgi-bin/leave-dol.asp?exiturl=http://twitter.com/usdol&exitTitle=www.Twitter.com&fedpage=no" class="sm-twitter">Twitter</a> 
+    <a href="/cgi-bin/leave-dol.asp?exiturl=http://www.instagram.com/USDOL&exitTitle=www.instagram.com/USDOL&fedpage=no" class="sm-instagram">DOL Instagram</a> 
+    <a href="/cgi-bin/leave-dol.asp?exiturl=https://plus.google.com/100916454633789293104/about/&exitTitle=plus.google.com&fedpage=no" class="sm-gplus">Google Plus</a> 
+    <a href="/cgi-bin/leave-dol.asp?exiturl=http://www.linkedin.com/company/u.s.-department-of-labor&exitTitle=www.linkedin.com/company/u.s.-department-of-labor&fedpage=no"" class="sm-in">LinkedIn</a> 
+    <a href="/rss/" class="sm-rss-btm">RSS</a> 
+    <a href="javascript:window.open('http://service.govdelivery.com/service/multi_subscribe.html?code=USDOL','Popup','width=800,height=500,toolbar=no,scrollbars=yes,resizable=yes'); void('');"
+				 ONCLICK="window.status='Subscribe'; return true"
+				 ONMOUSEOVER="window.status='Subscribe'; return true"
+				 ONMOUSEOUT="window.status=''; return true" class="sm-email-btm">Email</a></div>
+  </div>
+</div>
+<!-- End Footer One -->
+ 
+<!-- Start Footer Two -->
+<div class="row footer-two" role="navigation">
+  <div class="large-3 columns line-b-peach">
+    <p class="footer-info1a">200 Constitution Ave. NW<br>
+      Washington DC 20210<br>
+      1-866-4-USA-DOL<br>
+      <a href="/dol/contact/contact-phonecallcenter.htm">TTY</a><br>
+      <a href="/">www.dol.gov </a> </p>
+  </div>
+  <div class="large-3 columns line-b-peach">
+    <p class="footer-info1a"><strong>ABOUT THE SITE</strong></p>
+    <ul>
+      <li><a href="/dol/foia/">Freedom of Information Act</a></li>
+      <li><a href="/dol/privacynotice.htm">Privacy &amp; Security Statement</a></li>
+      <li><a href="/dol/disclaim.htm">Disclaimers</a></li>
+      <li><a href="/dol/aboutdol/website-policies.htm">Important Web Site Notices</a></li>
+      <li><a href="/dol/aboutdol/plug-ins.htm">Plug-ins Used by DOL</a></li>
+      <li><a href="/rss/">RSS Feeds from DOL</a></li>
+      <li><a href="/dol/aboutdol/accessibility.htm">Accessibility Statement</a></li>
+    </ul>
+  </div>
+  <div class="large-3 columns line-b-peach">
+    <p class="footer-info1a"><strong>LABOR DEPARTMENT</strong></p>
+    <ul>
+      <li><a href="/dol/topic/Spanish-speakingTopic.htm">Espa&ntilde;ol</a></li>
+      <li><a href="/dol/siteindex.htm">A to Z Index</a></li>
+      <li><a href="/dol/organization.htm">Agencies</a></li>
+      <li><a href="http://www.oig.dol.gov/">Office of Inspector General</a></li>
+      <li><a href="/dol/contact/contact-phonekeypersonnel.htm">Leadership Team</a></li>
+      <li><a href="/dol/contact/">Contact Us</a></li>
+      <li><a href="https://public.govdelivery.com/accounts/USDOL/subscriber/new?topic_id=USDOL_167", onclick="window.open('https://public.govdelivery.com/accounts/USDOL/subscriber/new?topic_id=USDOL_167&pop=t', '', 'scrollbars=1,toolbar=0,menubar=0,resizable=1,width=800,height=384');return false;">Subscribe to the DOL Newsletter</a></li>
+      <li><a href="/_sec/newsletter/">Read The DOL Newsletter</a></li>
+      <li><a href="/easl/">Emergency Accountability Status Link</a></li>
+    </ul>
+  </div>
+  <div class="large-3 columns">
+    <p class="footer-info1a">FEDERAL GOVERNMENT</p>
+    <ul>
+      <li><a href="/cgi-bin/leave-dol.asp?exiturl=http://www.whitehouse.gov&exitTitle=www.whitehouse.gov&fedpage=yes">White House</a></li>
+      <li><a href="/cgi-bin/leave-dol.asp?exiturl=https://www.healthcare.gov&exitTitle=www.healthcare.gov&fedpage=yes">Affordable Care Act</a></li>
+      <li><a href="/opa/disaster-recovery.htm">Disaster Recovery Assistance</a></li>
+      <li><a href="/cgi-bin/leave-dol.asp?exiturl=http://www.usa.gov&exitTitle=www.usa.gov&fedpage=yes">USA.gov</a></li>
+      <li><a href="/cgi-bin/leave-dol.asp?exiturl=https://www.disability.gov&exitTitle=wwww.disability.gov&fedpage=yes">Disability.gov</a></li>
+      <li><a href="/dol/PlainWriting/">Plain Writing Act</a></li>
+      <li><a href="/recovery/">Recovery Act</a></li>
+      <li><a href="/oasam/programs/crc/NoFearResult.htm">No Fear Act</a></li>
+    </ul>
+  </div>
+</div>
+<!-- End Footer Two --> 
+	<!--Footer End -->
+
+
+</div><!--Main End -->
+
+  </BODY>
+</HTML>

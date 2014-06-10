@@ -1,163 +1,70 @@
-﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<HTML> 
-<HEAD> 
-<TITLE>U.S. Department of Labor -- The Department of Labor Developer Community</TITLE>
-<META NAME="keywords" CONTENT="Department of Labor, DOL, Secretary of Labor" />
-<!-- begin dol-styles.shtm -->
-<link rel="shortcut icon" href="http://www.dol.gov/favicon.ico" type="image/x-icon">
-<link rel="icon" href="http://www.dol.gov/favicon.ico" type="image/x-icon">
-<link href="http://www.dol.gov/dol.css" rel="stylesheet" type="text/css">
-<link rel="stylesheet" href="api.css" TYPE="text/css" />
-<link href="http://webapps.dol.gov/FSPublic/Content/W_Helpful.css" rel="stylesheet" type="text/css">
-<style type="text/css">
-<!--
-caption {text-align:left; font-size:80%}
-table{margin-left:12px;}
-
-
--->
-</style>
-
-<!-- end dol-styles.shtm -->
-		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
-<script type="text/javascript" src="prettify.js"></script>
-<script language="JavaScript" type="text/javascript">
-
-	jQuery(document).ready(function(){
-
-		// This line of code makes code pretty to look at and understand.
-		window.prettyPrint && prettyPrint()
-	
-	});
-	
-
-
-</script>
-<!--start include header-dest-redesign3.shtm -->
-<script src="http://webapps.dol.gov/FSPublic/Scripts/W_Helpful.js" type="text/javascript"></script>
-<script type="text/javascript">
-		$(document).ready(function() {
-			W_Helpful.init('#fbcontent');
-		});
-</script> 
-</HEAD> 
-<BODY> 
-<a href="https://github.com/USDepartmentofLabor/DOLAPI"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png" alt="Fork me on GitHub"></a>
-<div id="Main">
-	<!--Header Start -->
-    <a href="#pagecontent" class="skipster">Skip to page content</a>
-
-<div id="Header">
-    <div id="Banner">
-        <p class="banner"><a href="http://www.dol.gov">United States Department of Labor</a></p>
-    </div>
-		<div id="RightColumn"><table><tr><td valign="bottom">
-		
-			</td><td>
-            
-  
- 
- 
- 
-            
-            
-          </td></tr>
-		  <tr><td colspan="2">
-			
-
-			</td></tr></table>
-		</div>
-	</div>
-    
-	<!--Header End -->
-
-	<!--Body Start -->
-	<div id="Body">
-		<div id="UtilityBar" class="tools">
-			<div class="utilitybarleft"><div id="agencyname">&nbsp;</div></div>
-
-			<!-- This is where the E-mail This page use to be -->
-			<div class="utilitybarright">
-				<div id="fbcontent" style="float:right"></div>			
-			</div>
-		</div>
-		<div class="crumb-links"><!-- begin crumb-nonav-auto.shtm -->
-<TABLE BORDER="0" CELLSPACING="0" CELLPADDING="0">
-  <TR>
-    <TD VALIGN="middle" ALIGN="LEFT" height="7" style="padding-left:2px"><span class="crumb-links">
-      <a href="http://www.dol.gov">DOL Home</a> &gt; <a href="http://www.dol.gov/open/">OPEN</a> &gt; <a href="http://developer.dol.gov">Developer Community</a> &gt; <a href="index.html">API Documentation</a> &gt; Beginner's Guide
-      </span> </td>
-
-  </tr>
-</table>
-<!-- end crumb-nonav-auto.shtm --></div>
-		<div id="content" >
-			<div id="pagecontent" style="width:768px;font-size:0;line-height:0;"></div>
-
-<!--end include header-dest-redesign3.shtm -->
-<!-- START CONTENT HERE  *************************************************** -->
+---
+layout: page
+title: Beginner's Guide
+---
+  	<div class='limiter pad1y pad4x clearfix'>
+  		<div class='col12 pad1y'>
                 <h1 class="title" id="page-title">Beginner's Guide</h1>
+</div>
+</div>
+  	<div class='limiter pad0y pad4x clearfix'>
+  		<div class='col12 pad1y'>
 
-<p>To use the API you must register at <a href="https://devtools.dol.gov/developer">https://devtools.dol.gov/developer</a> and request an API key for each application that will access the API. Registration and API keys are free. The API keys are used to digitally sign every request to the API.</p>
-<h2>Registration process:</h2>
+To use the API you must register at <a href="https://devtools.dol.gov/developer">https://devtools.dol.gov/developer</a> and request an API key for each application that will access the API. Registration and API keys are free. 
+<p><strong>note:</strong> A separate API key is not necessary for each application, but if you reuse your key across multiple apps, <a href="http://developer.dol.gov/dataset/api-metrics-key">your apps' metrics</a> will be combined and of little value.</p>
+</div>
+</div>
+  	<div class='limiter pad0y pad4x clearfix'>
+  		<div class='col12 pad1y'>
+<h2 class="subtitle">Registration process</h2>
 <ul><li>Visit <a href="https://devtools.dol.gov/developer">https://devtools.dol.gov/developer</a></li>
 <li>Click the Register link.</li>
 <li>Fill in the registration form and submit it.</li>
 <li>A confirmation email will be sent to the address you provided during registration.</li>
 <li>Click on the link in the email to activate your developer account.</li>
-</ul><h2>API Key (Token) Creation Process:</h2>
+</ul>
+</div>
+</div>
+  	<div class='limiter pad0y pad4x clearfix'>
+  		<div class='col12 pad1y'>
+<h2 class="subtitle">API Key (Token) Creation Process</h2>
 <ul><li>Visit <a href="https://devtools.dol.gov/developer">https://devtools.dol.gov/developer</a></li>
-<li>Go to the login page and enter your username and password</li>
+<li>At the login page, enter your username and password</li>
 <li>Click on the My Tokens link</li>
 <li>Click "Create New Token"</li>
-<li>Provide a Shared Secret (deprecated, but for the moment still required for the registration process), Application Name, and a Description</li>
+<li>Provide a Shared Secret (<i>deprecated, but for the moment still required for the registration process</i>), Application Name, and a Description</li>
 <li>The token value will be auto-generated and added to your tokens list.</li>
-</ul><h2>Accessing the API:</h2>
-<p>The API is exposed as an OData producer, with the addition of request authorizations. To make API calls you must supply a valid Token as the "KEY" parameter on the query string with every request. The current version of the API is backwards compatible. We are providing SDKs for some platforms that abstract the OData and request signing process and provides you with an easy to use method call. Please visit the <a href="/">homepage</a> to learn more about the Federal SDKs.</p>
-<p><strong>Example:</strong></p>
-<p>You want to read data from table Agencies in the dataset named FORMS.</p>
-<p>The request URL is: http://api.dol.gov/V1/FORMS/Agencies</p>
-<p>Your API Key (Token) is d9c6c290-da4c-424e-a378-fb4bd027b58b</p>
-<p>Your direct link to Agency data using the input above is:</p>
-<p>http://api.dol.gov/V1/FORMS/Agencies/?KEY=d9c6c290-da4c-424e-a378-fb4bd027b58b</p>
-<h2>XML and JSON</h2>
-<p>By default, the DOL API's responses are in XML format.  To receive the data in JSON, send an "Accept" header with "application/json."</p>
+</ul>
+</div>
+</div>
+  	<div class='limiter pad0y pad4x clearfix'>
+  		<div class='col12 pad1y'>
+<h2 class="subtitle">Accessing the API</h2>
+The API is exposed as an OData producer, with the addition of request authorizations. To make API calls you must supply a valid Token as the "KEY" parameter on the query string with every request. The current version of the API is backwards compatible. We are providing SDKs for some platforms that abstract the OData and request signing process and provides you with an easy to use method call. Please visit the <a href="code.html">open source code page</a> to learn more about the Federal SDKs.
+</div>
+</div>
+  	<div class='limiter pad0y pad4x clearfix'>
+  		<div class='col12 pad1y'>
+<strong>Example</strong>
+Assume that you want to read data from the Agencies table found in the dataset named DOLAgency. The request URL is: http://api.dol.gov/V1/DOLAgency/Agencies.
+<p>&nbsp;</p>
+Your API Key (Token) is d9c6c290-da4c-424e-a378-fb4bd027b58b<p><strong>note:</strong> This token is only an example.  It is not usable.</p>
+<p>&nbsp;</p>
+
+Your direct link to Agency data using the input above is:
+<pre><code>http://api.dol.gov/V1/DOLAgency/Agencies/?KEY=d9c6c290-da4c-424e-a378-fb4bd027b58b</code></pre>
+</div>
+</div>
+  	<div class='limiter pad0y pad4x clearfix'>
+  		<div class='col12 pad2y'>
+<h2 class="subtitle">Result Format</h2>
+By default, the DOL API's responses are in XML format.  To receive the data in JSON, send an "Accept" header with "application/json."
+</div>
+</div>
+  	<div class='limiter pad0y pad4x clearfix'>
+  		<div class='col12 pad2y'>
+<h2 class="subtitle">Next Steps</h2>
+Following the steps above will return the first 100 records.  To retrieve more or to be more selective in the data that is returned, <a href="accessing-the-api-using-http-requests.html">read on about accessing the API using HTTP requests</a>.
+<p>&nbsp;</p>
 
 
-<!-- END CONTENT HERE  *************************************************** -->
-<!---original location of this file: "/includes/" -->
-
-</div><!--Body End -->
-
- </div>
-
-	<!--Footer Start -->
-	<div id="Footer">
-		<div id="FooterMenu">
-			<div id="FooterMenuContainer">
-				<a href="http://www.dol.gov/dol/foia/main.htm">Freedom of Information Act</a>&nbsp;|&nbsp;
-
-				<a href="http://www.dol.gov/dol/privacynotice.htm">Privacy & Security Statement</a>&nbsp;|&nbsp;
-				<a href="http://www.dol.gov/dol/disclaim.htm">Disclaimers</a>&nbsp;|&nbsp;
-				<a href="http://webapps.dol.gov/feedback/FeedbackSurvey.aspx">Customer Survey</a>&nbsp;|&nbsp;
-				<a href="http://www.dol.gov/dol/aboutdol/website-policies.htm">Important Web Site Notices</a>&nbsp;|&nbsp;
-
-                <a href="http://www.dol.gov/dol/aboutdol/plug-ins.htm">Plug-ins Used by DOL</a>
-			</div>
-		</div>
-	
-		<div id="FooterContact">
-			<div id="FooterContactContainer">
-				U.S. Department of Labor&nbsp;|&nbsp;Frances Perkins Building, 200 Constitution Ave., NW, Washington, DC 20210<br>
-
-				<a href="http://www.dol.gov" style=" text-decoration: underline; ">www.dol.gov</a>&nbsp;|&nbsp;Telephone: 1-866-4-USA-DOL (1-866-487-2365)&nbsp;|&nbsp;TTY: 1-877-889-5627&nbsp;|&nbsp;<u><a href="http://www.dol.gov/dol/contact/index.htm">Contact Us</a></u>
-			</div>
-		</div>
-	</div>
-	<!--Footer End -->
-
-
-</div><!--Main End -->
-
-  </BODY>
-</HTML>
