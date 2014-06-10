@@ -5,6 +5,4 @@ Having trouble using DOL's API?  Feel free to use the [issues tab](https://githu
 
 ## Change Log
 
-### 30 May 2014
-#### beginners-guide.html 
-* Removed HTML anchor tags. The URLs are not intended for use, but merely as examples of their format.
+The Change Log has been [moved](http://usdepartmentoflabor.github.io/DOLAPI/changelog.html).
