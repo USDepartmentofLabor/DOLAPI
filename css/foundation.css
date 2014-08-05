@@ -2978,6 +2978,13 @@ p {
     line-height: 1.35;
     font-style: italic; }
 
+span.keywords { font-size: 80%; }
+span.xmldata { background-color: orange; }
+span.jsondata { background-color: Yellow; }
+span.csvdata { background-color: DarkTurquoise; }
+span.xlsdata { background-color: LimeGreen; }
+span.htmldata { background-color: LightPink; }
+
 /* Default header styles */
 h1, h2, h3, h4, h5, h6 {
   font-family: "Open Sans", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
@@ -5354,3 +5361,5 @@ th.hide-for-touch {
 
 .touch th.show-for-touch {
   display: table-cell !important; }
+  
+
